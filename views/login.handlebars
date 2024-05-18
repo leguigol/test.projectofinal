@@ -1,0 +1,36 @@
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="/api/v1/auth/login" method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Introduzca su email"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input 
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Introduzca su contraseña"
+                        required
+                    />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <a href="/api/v1/sessions/github" class="btn btn-secondary">ENTRAR con GITHUB</a>  
+
+            </form>
+        </div>
+    </div>
+</div>

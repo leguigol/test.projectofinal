@@ -1,0 +1,21 @@
+// const bcrypt=require('bcrypt');
+import bcrypt from 'bcrypt';
+
+const createHash=async(psw)=>{
+
+    const salt= await bcrypt.genSalt();
+    return await bcrypt.hashSync(psw,salt);
+
+};
+
+const isValidPasswd=async(psw,encryptedPsw)=>{
+
+    const isValid=await bcrypt.compareSync(psw,encryptedPsw);
+    return isValid;
+
+}
+
+export {
+    createHash,
+    isValidPasswd,
+}

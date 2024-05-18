@@ -1,0 +1,72 @@
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4">Registro</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="/api/v1/auth/register" method="post">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre del Usuario</label>
+                    <input 
+                        type="text"
+                        name="first_name"
+                        id="first_name"
+                        class="form-control"
+                        placeholder="Introduzca su nombre"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input 
+                        type="text"
+                        name="last_name"
+                        id="last_name"
+                        class="form-control"
+                        placeholder="Introduzca su apellido"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input 
+                        type="number"
+                        name="age"
+                        id="age"
+                        class="form-control"
+                        placeholder="Introduzca su edad"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Introduzca su email"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input 
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Introduzca su contraseña"
+                        required
+                    />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
